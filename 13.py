@@ -6,3 +6,5 @@ def longitut(a):
     return l
 
 # Apliación principal
+b=[1,"a",[3,4],5,6]
+print(longitut(b))
