@@ -1,7 +1,18 @@
-def leer_lista():
-    ll=()
-    for i in range(4):
-    return ll
+def leer():
+    lista=[]
+    a='a'
+    while a!='.':
+        a=input("Introduce un número: ")
+        if a !='.':
+            lista.append(int(a))
+    return tuple(lista)
 
-a = leer_lista()
-print(a)
+def mostrar_mayores_que(a, num):
+    for e in a:
+        if e > num:
+            print(e)
+
+# PP
+x=leer()
+i=input("Introduce el número que quiere comparar: ")
+mostrar_mayores_que(x,int(i))
